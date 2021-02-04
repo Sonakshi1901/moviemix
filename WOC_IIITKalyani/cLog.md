@@ -10,5 +10,5 @@ description - (work done through in that pr)
 
 
 ### [#2](https://github.com/Sonakshi1901/moviemix/pull/2)
-    Created by- [Mohit Raj][https://github.com/mohit355]
+    Created by- [Mohit Raj](https://github.com/mohit355)
     Description - added the boiler plate code structure
