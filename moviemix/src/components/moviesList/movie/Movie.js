@@ -1,5 +1,7 @@
 import React from "react";
 
-export const Movie = () => {
-  return <div>Single movie</div>;
+const Movie = () => {
+  return <div>Hello WORLD</div>;
 };
+
+export default Movie;

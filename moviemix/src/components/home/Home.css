@@ -1,10 +1,10 @@
 .home {
+  text-align: center;
   background: blue url("../../images//background/home_bg.jpg") center;
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: center;
 }
 
 .home__logo {

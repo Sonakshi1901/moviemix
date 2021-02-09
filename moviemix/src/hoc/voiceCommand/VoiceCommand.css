@@ -1,0 +1,19 @@
+.voiceCommand_btn {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  cursor: pointer;
+}
+
+.voiceCommand_box {
+  position: absolute;
+  right: 25px;
+  top: 60px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+}

@@ -2,7 +2,7 @@ const command = [
   {
     question: "What is the purpose of this website?",
     answer:
-      "This website contains a list of movies seperated by genrics and you can search them by your voice command",
+      "MovieMix is movies searching website.It makes your task easier by integrating me here to search in behalf of you by just your voice command. For knonwing all commands that I support ask me show all your commands or click on the right top button",
   },
   { question: "Who are you?/What is your name", answer: "My name is Alan AI." },
   { question: "", answer: "" },
