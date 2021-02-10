@@ -1,0 +1,21 @@
+button{
+  width: 180px;
+  height: 60px;
+  border: none;
+  color: black;
+  transition: ease-out 0.4s;
+  font-weight: 500;
+  font-size: 1.8rem;
+  outline: none;
+  border: 3px solid #DC143C;
+  position: relative;
+  z-index: 1;
+  left: 41%;
+  margin-top: -35px;
+}
+
+button:hover{
+  color: #fff;
+  cursor: pointer;
+  background-color: #DC134C;
+}
