@@ -1,0 +1,68 @@
+.Card{
+  background: #ffffff;
+  box-shadow: 0px 6px 18px rgb(0 0 0 / 10%);
+  width: 100%;
+  max-width: 260px;
+  margin-top: -25px;
+  border-radius: 10px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.movie-container {
+    padding: 0;
+    margin: 0;
+    height: 200px;
+    width: 100%;
+    display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.movie-content {
+    padding: 18px 18px 24px 18px;
+    margin: 0;
+}
+
+.movie-content-header{
+    display: table;
+    width: 100%;
+}
+
+.movie-title {
+    text-align: left;
+    font-size: 24px;
+    margin: 0;
+}
+
+h3 {
+    color: black;
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.info-section {
+    margin-top: 1em;
+    width: 100%;
+    display: table-cell;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.info-section label {
+    display: block;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 5px;
+    margin-bottom: .5em;
+    font-size: 12px;
+}
+
+.info-section span {
+    font-weight: 700;
+    font-size: 17px;
+}
