@@ -1,21 +1,32 @@
-button{
-  width: 180px;
-  height: 60px;
-  border: none;
-  color: black;
-  transition: ease-out 0.4s;
-  font-weight: 500;
-  font-size: 1.8rem;
-  outline: none;
-  border: 3px solid #DC143C;
-  position: relative;
-  z-index: 1;
-  left: 41%;
-  margin-top: -35px;
+.utility__button {
+  box-sizing: border-box;
 }
 
-button:hover{
+.utility__button-button {
+  font-size: 1.5rem;
+  line-height: 1.3;
+  color: black;
+  outline: none;
+  border: 2px solid #181717;
+  min-height: 2rem;
+  border-radius: 5px;
+}
+
+.utility__button-button:hover {
   color: #fff;
   cursor: pointer;
-  background-color: #DC134C;
+  background-color: #49cccc;
+  border: 3px solid #295f5f;
+}
+
+.btn__md {
+  width: 6rem;
+}
+
+.btn__lg {
+  width: 8rem;
+}
+
+.btn__sm {
+  width: 4rem;
 }
