@@ -7,10 +7,10 @@ function App() {
     <>
       <div className="App">
         <img className="logo" src={logo} alt="logo" />
+        <Home />;
       </div>
     </>
   );
-  return <Home />;
 }
 
 export default App;
