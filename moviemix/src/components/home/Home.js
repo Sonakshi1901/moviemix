@@ -15,7 +15,11 @@ const Home = () => {
   return (
     <div className="home">
       <img className="home__logo" src={logo} alt="logo" />
-      <Button name="Next" handleButtonClick={handleHomeNext}></Button>
+      <Button
+        name="Next"
+        newClass="btn__md"
+        handleButtonClick={handleHomeNext}
+      ></Button>
     </div>
   );
 };

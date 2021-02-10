@@ -8,7 +8,7 @@
 .voiceCommand_box {
   position: absolute;
   right: 25px;
-  top: 60px;
+  top: 80px;
   visibility: hidden;
   opacity: 0;
 }

@@ -5,12 +5,7 @@ import Button from "../../components/utility/buttons/Button";
 import command from "./command.js";
 
 const VoiceCommand = (props) => {
-  // const [showCommand, setShowCommand] = useState(false);
   const { showCommand, showCommandHandler } = useCommand();
-
-  // const showCommandHandler = () => {
-  //   setShowCommand(!showCommand);
-  // };
 
   return (
     <div className="voiceCommand">
