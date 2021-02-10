@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-import logo from "./images/logo/MovieMix4.png";
 import Home from "./components/home/Home";
 import VoiceCommand from "./hoc/voiceCommand/VoiceCommand";
 import useAlan from "./Alan AI/useAlan";
