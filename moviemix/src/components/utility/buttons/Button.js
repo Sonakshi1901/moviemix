@@ -5,7 +5,7 @@ const Button = (props) => {
   return (
     <div className="button">
       <button onClick={(event) => props.handleButtonClick(event)}>
-        {props.name}{" "}
+        {props.name}
       </button>
     </div>
   );
