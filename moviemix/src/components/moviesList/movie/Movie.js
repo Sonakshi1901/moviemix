@@ -9,7 +9,7 @@ const Movie = () => {
       </div>
       <div className="movie-content">
         <div className="movie-content-header">
-          <a href="#">
+          <a href="##">
             <h3 className="movie-title">Title</h3>
           </a>
         </div>

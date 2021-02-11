@@ -1,11 +1,25 @@
-import React, { useState } from "react";
+import React from "react";
 import "./VoiceCommand.css";
 import { useCommand } from "../../context/Context";
+import Faq from "react-faq-component";
 import Button from "../../components/utility/buttons/Button";
-import command from "./command.js";
+import commands from "./command.js";
 
 const VoiceCommand = (props) => {
-  const { showCommand, showCommandHandler } = useCommand();
+  const { showCommand, showCommandHandler } = useCommand(); // context
+
+  const styles = {
+    bgColor: "transparent",
+    titleTextColor: "red",
+    rowTitleColor: "black",
+    rowContentColor: "blue",
+    arrowColor: "white",
+  };
+
+  const config = {
+    animate: true,
+    // tabFocus: true,
+  };
 
   return (
     <div className="voiceCommand">
@@ -13,7 +27,7 @@ const VoiceCommand = (props) => {
         <Button handleButtonClick={showCommandHandler} name="Commands" />
       </div>
       <div className={`voiceCommand_box ${showCommand ? "visible" : null} `}>
-        HELLO WORLD
+        <Faq data={commands} styles={styles} config={config} />
       </div>
       {props.children}
     </div>

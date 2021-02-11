@@ -69,7 +69,12 @@ export default function useAlan() {
       window.removeEventListener(COMMANDS.HIDE_COMMAND, handleHideCommand);
     };
     //
-  }, [handleHomeNext, handleShowCommand, handleHideCommand]);
+  }, [
+    handleHomeNext,
+    handleShowCommand,
+    handleHideCommand,
+    handleHomeNextButton,
+  ]);
 
   useEffect(() => {
     if (alanInstance != null) return;
