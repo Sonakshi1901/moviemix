@@ -17,3 +17,8 @@ description - (work done through in that pr)
 
     created by- Mohit Raj
     Description - added homepage of the website Moviemix
+
+### [#8](https://github.com/Sonakshi1901/moviemix/pull/8)
+
+    created by- Sonakshi Satpathy
+    Description - added a movie card and dynamic button
