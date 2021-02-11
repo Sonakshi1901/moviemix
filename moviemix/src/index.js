@@ -1,15 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import ContextApi from "./context/Context";
+import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <BrowserRouter>
     <ContextApi>
       <App />
     </ContextApi>
-  </React.StrictMode>,
-
+  </BrowserRouter>,
   document.getElementById("root")
 );

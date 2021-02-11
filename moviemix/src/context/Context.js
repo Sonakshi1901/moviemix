@@ -1,4 +1,5 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
+import { withRouter } from "react-router-dom";
 
 const Alancontext = React.createContext();
 
@@ -6,9 +7,13 @@ export function useCommand() {
   return useContext(Alancontext);
 }
 
-function ContextApi({ children }) {
+function ContextApi(props) {
   const [showCommand, setShowCommand] = useState(false);
   const [homeNextClicked, setHomeNextClicked] = useState(false);
+
+  useEffect(() => {
+    // console.log(props);
+  }, [props]);
 
   function showCommandHandler() {
     setShowCommand(!showCommand);
@@ -16,6 +21,7 @@ function ContextApi({ children }) {
 
   const handleHomeNext = () => {
     setHomeNextClicked(true);
+    props.history.push("/genres-list");
   };
 
   const values = {
@@ -27,7 +33,9 @@ function ContextApi({ children }) {
     handleHomeNext: handleHomeNext,
   };
 
-  return <Alancontext.Provider value={values}>{children}</Alancontext.Provider>;
+  return (
+    <Alancontext.Provider value={values}>{props.children}</Alancontext.Provider>
+  );
 }
 
-export default ContextApi;
+export default withRouter(ContextApi);
