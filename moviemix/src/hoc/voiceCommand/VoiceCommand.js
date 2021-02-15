@@ -29,7 +29,7 @@ const VoiceCommand = (props) => {
       <div className={`voiceCommand_box ${showCommand ? "visible" : null} `}>
         <Faq data={commands} styles={styles} config={config} />
       </div>
-      {props.children}
+      <div>{props.children}</div>
     </div>
   );
 };
