@@ -1,4 +1,5 @@
 .App {
+
   /* background: blue url("./images/background/home_bg.jpg") center;
   height: 100vh;
   background-repeat: no-repeat;
@@ -11,3 +12,7 @@
   /* width: 279px;
   height: 223px; */
 }
+
+  text-align: center;
+}
+
