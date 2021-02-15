@@ -1,3 +1,5 @@
+.voiceCommand {
+}
 .voiceCommand_btn {
   position: absolute;
   right: 20px;
@@ -14,7 +16,7 @@
   );
   right: 25px;
   top: 80px;
-  width: 30%;
+  width: 40%;
   overflow: auto;
   visibility: hidden;
   max-height: 68.5vh;

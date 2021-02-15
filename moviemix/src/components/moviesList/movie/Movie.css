@@ -1,68 +1,69 @@
-.Card{
+.Card {
   background: #ffffff;
-  box-shadow: 0px 6px 18px rgb(0 0 0 / 10%);
-  width: 100%;
-  max-width: 260px;
-  margin-top: -25px;
+  box-shadow: 0px 6px 18px rgb(0 0 0 / 15%);
+  width: 18rem;
   border-radius: 10px;
-  display: inline-block;
   overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .movie-container {
-    padding: 0;
-    margin: 0;
-    height: 200px;
-    width: 100%;
-    display: block;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+  padding: 0;
+  margin: 0;
+  height: 200px;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: red;
+}
+
+.movie-container img {
+  height: inherit;
+  width: inherit;
+  text-align: center;
 }
 
 .movie-content {
-    padding: 18px 18px 24px 18px;
-    margin: 0;
+  padding: 18px 18px 24px 18px;
+  margin: 0;
+  background-color: #ccc;
 }
 
-.movie-content-header{
-    display: table;
-    width: 100%;
+.movie-content-header {
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .movie-title {
-    text-align: left;
-    font-size: 24px;
-    margin: 0;
+  font-size: 24px;
+  margin: 0;
 }
 
 h3 {
-    color: black;
-    display: block;
-    font-size: 1.17em;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
+  color: black;
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
 }
 
 .info-section {
-    margin-top: 1em;
-    width: 100%;
-    display: table-cell;
-    text-transform: uppercase;
-    text-align: left;
-}
-
-.info-section label {
-    display: block;
-    color: rgba(0, 0, 0, 0.5);
-    margin-top: 5px;
-    margin-bottom: .5em;
-    font-size: 12px;
+  margin-top: 1em;
+  width: 100%;
+  font-size: 1.2rem;
+  display: table-cell;
+  text-align: left;
 }
 
 .info-section span {
-    font-weight: 700;
-    font-size: 17px;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.movie__btn {
+  text-align: right;
 }

@@ -1,14 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useCommand } from "../../context/Context";
 import logo from "../../images/logo/MovieMix4.png";
 import "./Home.css";
-import { Route, Redirect } from "react-router-dom";
-import Movie from "../moviesList/movie/Movie";
 import Button from "../utility/buttons/Button";
-import GenresList from "../genresList/GenresList";
 
 const Home = (props) => {
-  const { homeNextClicked, handleHomeNext } = useCommand();
+  const { handleHomeNext } = useCommand();
 
   return (
     <div className="home">

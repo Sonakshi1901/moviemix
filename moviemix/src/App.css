@@ -1,13 +1,13 @@
 .App {
-  background: blue url("./images/background/home_bg.jpg") center;
+  /* background: blue url("./images/background/home_bg.jpg") center;
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: center;
+  text-align: center; */
 }
 
 .logo {
-  margin-top: 10px;
-  width: 279px;
-  height: 223px;
+  /* margin-top: 10px; */
+  /* width: 279px;
+  height: 223px; */
 }
