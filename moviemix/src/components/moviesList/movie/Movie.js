@@ -1,22 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Movie.css";
+import Button from "../../utility/buttons/Button";
+import logo from "../../../images/logo/MovieMix4.png";
 
-const Movie = () => {
+const Movie = (props) => {
+  //
+  const [showDetailsPopUp, setShowDetailsPopUp] = useState(false);
+
+  const handleDetails = () => {
+    setShowDetailsPopUp(true);
+    alert("handling details");
+  };
+
   return (
     <div className="Card">
       <div className="movie-container">
-        <p>Image of the movie</p>
+        <img src={logo} alt="img" />
       </div>
       <div className="movie-content">
         <div className="movie-content-header">
           <a href="##">
-            <h3 className="movie-title">Title</h3>
+            <h3 className="movie-title">{props.movieName}</h3>
           </a>
         </div>
 
         <div className="info-section">
-          <label>Director's Name</label>
-          <span>Release Date</span>
+          <p>
+            <span> Directed by - </span> {props.directorName}
+          </p>
+          <p>
+            <span>Released on - </span> {props.dateOfRelease}
+          </p>
+        </div>
+        <div className="movie__btn">
+          <Button
+            name="Details"
+            handleButtonClick={handleDetails}
+            newClass="btn__lg"
+          />
         </div>
       </div>
     </div>

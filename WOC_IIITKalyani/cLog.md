@@ -3,9 +3,7 @@
 ##### Syntax
 
 #number -- pull request number (linked with that PR)
-
 Created by - Name
-
 description - (work done through in that pr)
 
 ### [#2](https://github.com/Sonakshi1901/moviemix/pull/2)
@@ -32,7 +30,7 @@ description - (work done through in that pr)
 
     created by- Sonakshi Satpathy
     Description - added a movie card and dynamic button.
-    
+
 ### [#9](https://github.com/Sonakshi1901/moviemix/pull/9)
 
     created by- Mohit Raj
