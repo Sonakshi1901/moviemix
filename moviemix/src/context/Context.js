@@ -26,6 +26,7 @@ function ContextApi(props) {
         setMovieType("");
         return request;
       } else if (movieType === "fetchTopRated") {
+        console.log(props);
         const request = await axios.get(fetchURL.fetchTopRated);
         console.log("fetchTopRated");
         setMovies(request.data.results);
