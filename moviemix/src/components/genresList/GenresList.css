@@ -2,15 +2,9 @@
   text-align: center;
 }
 
-.genreList__movies {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  /* background-color: DodgerBlue; */
-}
-
-.genreList__movies > div {
-  margin: 15px;
+.genreList__movies{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px 10px;
 }
