@@ -1,27 +1,27 @@
 const genre = [
   {
     name: "Trending Now",
-    keyword: "fetchTrending",
+    keyword: "Trending",
   },
   {
     name: "Top Rated Movies",
-    keyword: "fetchTopRated",
+    keyword: "TopRated",
   },
   {
     name: "NetFlix Originals",
-    keyword: "fetchNetFlixOriginals",
+    keyword: "NetFlixOriginals",
   },
   {
     name: "Comedy Movies",
-    keyword: "fetchComedyMovies",
+    keyword: "ComedyMovies",
   },
   {
     name: "Horror Movies",
-    keyword: "fetchHorrorMovies",
+    keyword: "HorrorMovies",
   },
   {
     name: "Romantic Movies",
-    keyword: "fetchRomanceMovies",
+    keyword: "RomanceMovies",
   },
 ];
 

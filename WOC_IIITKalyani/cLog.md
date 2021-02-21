@@ -40,3 +40,6 @@ description - (work done through in that pr)
 
     created by- Mohit Raj
     Description - configured voice command with next button and with listing all voice command button.
+    
+### [#11](https://github.com/Sonakshi1901/moviemix/pull/11)
+    Description - added Alan voice command functional with searching of api call and some basic command like next,back,etc.

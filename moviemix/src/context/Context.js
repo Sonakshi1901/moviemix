@@ -17,43 +17,41 @@ function ContextApi(props) {
 
   useEffect(() => {
     async function fetchData() {
-      if (movieType === "fetchTrending") {
+      if (movieType === "Trending") {
         const request = await axios.get(fetchURL.fetchTrending);
-
         console.log("fetchTrending");
         setMovies(request.data.results);
         props.history.push("/trending-movies");
         setMovieType("");
         return request;
-      } else if (movieType === "fetchTopRated") {
-        console.log(props);
+      } else if (movieType === "TopRated") {
         const request = await axios.get(fetchURL.fetchTopRated);
         console.log("fetchTopRated");
         setMovies(request.data.results);
         props.history.push("/top-rated-movies");
         setMovieType("");
         return request;
-      } else if (movieType === "fetchNetFlixOriginals") {
+      } else if (movieType === "NetFlixOriginals") {
         const request = await axios.get(fetchURL.fetchNetFlixOriginals);
         console.log("fetchNetFlixOriginals");
         setMovies(request.data.results);
         props.history.push("/netflix-originals-movies");
         setMovieType("");
         return request;
-      } else if (movieType === "fetchComedyMovies") {
+      } else if (movieType === "ComedyMovies") {
         const request = await axios.get(fetchURL.fetchComedyMovies);
         console.log("fetchComedyMovies");
         setMovies(request.data.results);
         props.history.push("/comedy-movies");
         setMovieType("");
         return request;
-      } else if (movieType === "fetchHorrorMovies") {
+      } else if (movieType === "HorrorMovies") {
         const request = await axios.get(fetchURL.fetchHorrorMovies);
         console.log("fetchHorrorMovies");
         setMovies(request.data.results);
         props.history.push("/horror-movies");
         return request;
-      } else if (movieType === "fetchRomanceMovies") {
+      } else if (movieType === "RomanceMovies") {
         const request = await axios.get(fetchURL.fetchRomanceMovies);
         console.log("fetchRomanceMovies");
         setMovies(request.data.results);
