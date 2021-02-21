@@ -79,6 +79,11 @@ function ContextApi(props) {
     props.history.goBack();
   };
 
+  const forward = () => {
+    console.log(props.history);
+    props.history.goForward();
+  };
+
   const values = {
     showCommand,
     setShowCommand,
@@ -90,6 +95,7 @@ function ContextApi(props) {
     handleHomeNext: handleHomeNext,
     backToHome: backToHome,
     back: back,
+    forward: forward,
   };
 
   return (

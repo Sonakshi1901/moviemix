@@ -9,6 +9,7 @@ const COMMANDS = {
   HIDE_COMMAND: "hide-commands",
   GENRE_MOVIES: "show-genres",
   BACK: "back",
+  FORWARD: "forward",
 };
 
 export default function useAlan() {
@@ -23,6 +24,7 @@ export default function useAlan() {
     setMovieType,
     backToHome,
     back,
+    forward,
   } = useCommand();
 
   const [alanInstance, setAlanInstance] = useState();
@@ -70,19 +72,18 @@ export default function useAlan() {
     ({ detail: { genreName } }) => {
       console.log(genreName);
       if (genreName === "trendings") {
-        setMovieType("fetchTrending");
+        setMovieType("Trending");
       } else if (genreName === "top rated") {
-        setMovieType("fetchTopRated");
+        setMovieType("TopRated");
       } else if (genreName === "Netflix") {
-        setMovieType("fetchNetFlixOriginals");
+        setMovieType("NetFlixOriginals");
       } else if (genreName === "comedy") {
-        setMovieType("fetchComedyMovies");
+        setMovieType("ComedyMovies");
       } else if (genreName === "horror") {
-        setMovieType("fetchHorrorMovies");
+        setMovieType("HorrorMovies");
       } else if (genreName === "romance" || genreName === "romantic") {
-        setMovieType("fetchRomanceMovies");
+        setMovieType("RomanceMovies");
       }
-
       alanInstance.playText("Here are the lists of your choice");
     },
     [setMovieType, alanInstance]
@@ -90,8 +91,14 @@ export default function useAlan() {
 
   const handleBack = useCallback(() => {
     setHomeNextClicked(false);
+    alanInstance.playText("going back");
     back();
-  }, [back, setHomeNextClicked]);
+  }, [back, setHomeNextClicked, alanInstance]);
+
+  const handleForward = useCallback(() => {
+    alanInstance.playText("goint back to previous page");
+    forward();
+  }, [forward, alanInstance]);
 
   //
   //
@@ -107,6 +114,7 @@ export default function useAlan() {
     window.addEventListener(COMMANDS.GENRE_MOVIES, handleGenreMovie);
     window.addEventListener(COMMANDS.BACK_TO_HOME, handleBackToHome);
     window.addEventListener(COMMANDS.BACK, handleBack);
+    window.addEventListener(COMMANDS.FORWARD, handleForward);
 
     return () => {
       window.removeEventListener(COMMANDS.HOME_NEXT, handleHomeNextButton);
@@ -115,6 +123,7 @@ export default function useAlan() {
       window.removeEventListener(COMMANDS.GENRE_MOVIES, handleGenreMovie);
       window.removeEventListener(COMMANDS.BACK_TO_HOME, handleBackToHome);
       window.removeEventListener(COMMANDS.BACK, handleBack);
+      window.removeEventListener(COMMANDS.FORWARD, handleForward);
     };
     //
   }, [
@@ -125,6 +134,7 @@ export default function useAlan() {
     handleGenreMovie,
     handleBackToHome,
     handleBack,
+    handleForward,
   ]);
 
   useEffect(() => {
