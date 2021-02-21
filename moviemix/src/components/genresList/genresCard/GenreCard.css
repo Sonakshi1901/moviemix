@@ -1,0 +1,62 @@
+.GenreCard{
+  background: #ffffff;
+  box-shadow: 0px 6px 18px rgb(0 0 0 / 10%);
+  width: 100%;
+  max-width: 240px;
+  margin-top: 80px;
+  border-radius: 10px;
+  margin-left: 20px;
+  display: inline-block;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.genre-container {
+    padding: 0;
+    margin: 0;
+    height: 160px;
+    width: 100%;
+    display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+}
+
+.genre-content {
+    padding: 18px 18px 24px 18px;
+    margin: 0;
+}
+
+.genre-type{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size:  1.17em;
+    margin: 0;
+}
+
+h3 {
+    color: black;
+    display: block;
+    font-size: 1.5em;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.genre-commands, .other-genres{
+    margin-top: 1em;
+    width: 100%;
+    display: block;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.genre__type {
+  width: 10rem;
+}
