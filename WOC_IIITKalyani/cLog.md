@@ -43,6 +43,7 @@ description - (work done through in that pr)
 
 ### [#11](https://github.com/Sonakshi1901/moviemix/pull/11)
 
+    created by- Mohit Raj
     Description - added Alan voice command functional with searching of api call and some basic command like next,back,etc.
 
 ### [#12](https://github.com/Sonakshi1901/moviemix/pull/12)
