@@ -16,6 +16,7 @@ const GenresList = () => {
          <div key={genre.keyword}>
           <GenreCard
            name={genre.name}
+           img={genre.img}
            keyword= {genre.keyword}/>
           </div>
         ))}
