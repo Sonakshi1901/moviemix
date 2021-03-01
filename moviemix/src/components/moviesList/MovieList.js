@@ -8,13 +8,13 @@ const MovieList = () => {
   console.log(movies);
 
   return (
-   <div className="movielist">
-    <div className="movielist__movies">
-      {movies.map((movie) => (
-        <Movie />
-      ))}
+    <div className="movielist">
+      <div className="movielist__movies">
+        {movies.map((movie) => (
+          <Movie image={movie.backdrop_path} />
+        ))}
+      </div>
     </div>
-   </div>
   );
 };
 

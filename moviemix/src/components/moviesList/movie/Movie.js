@@ -12,10 +12,11 @@ const Movie = (props) => {
     alert("handling details");
   };
 
+  const baseUrl = "https://image.tmdb.org/t/p/w500/";
   return (
     <div className="Card">
       <div className="movie-container">
-        <img src={logo} alt="img" />
+        <img src={baseUrl + props.image} alt="img" />
       </div>
       <div className="movie-content">
         <div className="movie-content-header">
