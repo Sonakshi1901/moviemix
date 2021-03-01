@@ -71,7 +71,7 @@ export default function useAlan() {
   const handleGenreMovie = useCallback(
     ({ detail: { genreName } }) => {
       console.log(genreName);
-      if (genreName === "trendings") {
+      if (genreName === "Trendings" || genreName === "trendings") {
         setMovieType("Trending");
       } else if (genreName === "top rated") {
         setMovieType("TopRated");
