@@ -40,6 +40,17 @@ description - (work done through in that pr)
 
     created by- Mohit Raj
     Description - configured voice command with next button and with listing all voice command button.
-    
+
 ### [#11](https://github.com/Sonakshi1901/moviemix/pull/11)
+
     Description - added Alan voice command functional with searching of api call and some basic command like next,back,etc.
+
+### [#12](https://github.com/Sonakshi1901/moviemix/pull/12)
+
+    created by- Sonakshi Satpathy
+    Description - Created a genre card and looped it through various genre types. Styled the layout of all the cards.
+
+### [#14](https://github.com/Sonakshi1901/moviemix/pull/14)
+
+    created by- Sonakshi Satpathy
+    Description - added the details for all the movies (title, poster image, vote-average and overview) and made the genre-list and movie pages responsive.

@@ -1,36 +1,42 @@
 import React, { useState } from "react";
 import "./Movie.css";
 import Button from "../../utility/buttons/Button";
-import logo from "../../../images/logo/MovieMix4.png";
+import DetailsPopUp from "../../moviesList/popup/DetailsPopUp";
 
 const Movie = (props) => {
-  //
   const [showDetailsPopUp, setShowDetailsPopUp] = useState(false);
 
-  const handleDetails = () => {
+  function handleDetails() {
     setShowDetailsPopUp(true);
-    alert("handling details");
-  };
+    setShowDetailsPopUp(!showDetailsPopUp);
+  }
 
   const baseUrl = "https://image.tmdb.org/t/p/w500/";
   return (
     <div className="Card">
       <div className="movie-container">
-        <img src={baseUrl + props.image} alt="img" />
+        <img
+          src={"http://image.tmdb.org/t/p/w500" + props.poster_path}
+          alt="img"
+        />
       </div>
       <div className="movie-content">
         <div className="movie-content-header">
           <a href="##">
-            <h3 className="movie-title">{props.movieName}</h3>
+            <h3 className="movie-title">
+              {props.original_title} {props.original_name}
+            </h3>
           </a>
         </div>
 
         <div className="info-section">
           <p>
-            <span> Directed by - </span> {props.directorName}
+            <span>
+              Released on: {props.release_date} {props.first_air_date}
+            </span>
           </p>
           <p>
-            <span>Released on - </span> {props.dateOfRelease}
+            <span>Vote Average: {props.vote_average}</span>
           </p>
         </div>
         <div className="movie__btn">
@@ -38,6 +44,10 @@ const Movie = (props) => {
             name="Details"
             handleButtonClick={handleDetails}
             newClass="btn__lg"
+          />
+          <DetailsPopUp
+            overview={props.overview}
+            showDetailsPopUp={showDetailsPopUp}
           />
         </div>
       </div>
