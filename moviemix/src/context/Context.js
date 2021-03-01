@@ -50,12 +50,14 @@ function ContextApi(props) {
         console.log("fetchHorrorMovies");
         setMovies(request.data.results);
         props.history.push("/horror-movies");
+        setMovieType("");
         return request;
       } else if (movieType === "RomanceMovies") {
         const request = await axios.get(fetchURL.fetchRomanceMovies);
         console.log("fetchRomanceMovies");
         setMovies(request.data.results);
         props.history.push("/romantic-movies");
+        setMovieType("");
         return request;
       }
     }
