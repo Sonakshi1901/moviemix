@@ -54,3 +54,9 @@ description - (work done through in that pr)
 
     created by- Sonakshi Satpathy
     Description - added the details for all the movies (title, poster image, vote-average and overview) and made the genre-list and movie pages responsive.
+
+
+### [#15](https://github.com/Sonakshi1901/moviemix/pull/15)
+
+    created by- Mohit Raj
+    Description - Added website logo and fixed an issue with the trending page.
