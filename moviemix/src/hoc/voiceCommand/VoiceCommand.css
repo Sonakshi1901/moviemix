@@ -31,3 +31,14 @@
   visibility: visible;
   opacity: 1;
 }
+
+.header__logo {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border: 2px solid rgb(241, 239, 239);
+  border-radius: 20%;
+  background-color: blue;
+}

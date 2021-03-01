@@ -5,7 +5,6 @@ import "./MovieList.css";
 
 const MovieList = () => {
   const { movies } = useCommand();
-  console.log(movies);
 
   movies.map((obj) => ({
     original_title: obj.original_title,

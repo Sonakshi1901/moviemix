@@ -4,6 +4,8 @@ import { useCommand } from "../../context/Context";
 import Faq from "react-faq-component";
 import Button from "../../components/utility/buttons/Button";
 import commands from "./command.js";
+import logo from "../../images/logo/MovieMix4.png";
+import { Redirect, withRouter } from "react-router-dom";
 
 const VoiceCommand = (props) => {
   const { showCommand, showCommandHandler } = useCommand(); // context
@@ -23,6 +25,12 @@ const VoiceCommand = (props) => {
 
   return (
     <div className="voiceCommand">
+      <div>
+        <a href="/" className="header__logo">
+          <img src={logo} alt="logo" />
+        </a>
+      </div>
+
       <div className="voiceCommand_btn">
         <Button handleButtonClick={showCommandHandler} name="Commands" />
       </div>
@@ -34,4 +42,4 @@ const VoiceCommand = (props) => {
   );
 };
 
-export default VoiceCommand;
+export default withRouter(VoiceCommand);

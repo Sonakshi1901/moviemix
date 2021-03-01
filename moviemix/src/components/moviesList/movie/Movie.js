@@ -11,7 +11,7 @@ const Movie = (props) => {
     setShowDetailsPopUp(!showDetailsPopUp);
   }
 
-  const baseUrl = "https://image.tmdb.org/t/p/w500/";
+  // const baseUrl = "https://image.tmdb.org/t/p/w500/";
   return (
     <div className="Card">
       <div className="movie-container">
