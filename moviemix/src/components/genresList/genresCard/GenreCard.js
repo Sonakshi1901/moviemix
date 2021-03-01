@@ -18,7 +18,7 @@ const GenreCard = (props) => {
   return (
          <div className="GenreCard">
           <div className="genre-container">
-            <p>Image of the genre </p>
+            <img src={props.img} alt="img" />
           </div>
           <div className="genre-content">
               <div className="genre-type">
@@ -30,7 +30,7 @@ const GenreCard = (props) => {
               </div>
 
               <div className= "other-genres">
-                <Button name={"Show All " + props.keyword} handleButtonClick={setMovie} />
+                <Button name={"Show All " + props.keyword} newClass="btn__full" handleButtonClick={setMovie} />
               </div>
           </div>
          </div>
