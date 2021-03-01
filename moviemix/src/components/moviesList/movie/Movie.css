@@ -11,7 +11,7 @@
 .movie-container {
   padding: 0;
   margin: 0;
-  height: 240px;
+  height: 320px;
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -25,13 +25,13 @@
 }
 
 .movie-content {
-  padding: 18px 18px 24px 18px;
+  padding: 10px 18px 22px 18px;
   margin: 0;
 }
 
 .movie-content-header {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .movie-title {
@@ -60,9 +60,12 @@ h3 {
 
 .info-section span {
   font-weight: 700;
-  font-size: 17px;
+  font-size: 19px;
+  color: black;
+
 }
 
 .movie__btn {
   text-align: right;
+  padding: 10px;
 }
