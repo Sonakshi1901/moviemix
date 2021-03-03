@@ -61,3 +61,8 @@ description - (work done through in that pr)
 
     created by- Mohit Raj
     Description - Added website logo and fixed an issue with the trending page.
+
+### [#16](https://github.com/Sonakshi1901/moviemix/pull/16)
+
+    created by- Sonakshi Satpathy
+    Description - Made a popup box for each movie card's detail and made the homepage responsive. Added some extra css stylings.
