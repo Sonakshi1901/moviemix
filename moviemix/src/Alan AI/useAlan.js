@@ -96,7 +96,7 @@ export default function useAlan() {
   }, [back, setHomeNextClicked, alanInstance]);
 
   const handleForward = useCallback(() => {
-    alanInstance.playText("goint back to previous page");
+    alanInstance.playText("going back to previous page");
     forward();
   }, [forward, alanInstance]);
 
