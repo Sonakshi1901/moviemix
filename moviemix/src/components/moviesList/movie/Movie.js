@@ -14,6 +14,7 @@ const Movie = (props) => {
   // const baseUrl = "https://image.tmdb.org/t/p/w500/";
   return (
     <div className="Card">
+     <div className="Movie-Card">
       <div className="movie-container">
         <img
           src={"http://image.tmdb.org/t/p/w500" + props.poster_path}
@@ -24,7 +25,7 @@ const Movie = (props) => {
         <div className="movie-content-header">
           <a href="##">
             <h3 className="movie-title">
-              {props.original_title} {props.original_name}
+              {props.title} {props.original_name}
             </h3>
           </a>
         </div>
@@ -45,12 +46,13 @@ const Movie = (props) => {
             handleButtonClick={handleDetails}
             newClass="btn__lg"
           />
-          <DetailsPopUp
-            overview={props.overview}
-            showDetailsPopUp={showDetailsPopUp}
-          />
         </div>
       </div>
+    </div>
+      {showDetailsPopUp && <DetailsPopUp
+        overview={props.overview}
+        handleClose={handleDetails}
+      />}
     </div>
   );
 };
