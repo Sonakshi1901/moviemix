@@ -2,9 +2,11 @@
 
 ##### Syntax
 
-#number -- pull request number (linked with that PR)
-Created by - Name
-description - (work done through in that pr)
+#PR_NUMBER (linked with the respective PR)
+
+    Created by - Contributor Name
+    Description- Changes or features added through the PR.
+    
 
 ### [#2](https://github.com/Sonakshi1901/moviemix/pull/2)
 
