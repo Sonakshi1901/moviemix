@@ -5,9 +5,10 @@ import "./MovieList.css";
 
 const MovieList = () => {
   const { movies } = useCommand();
+  console.log(movies);
 
   movies.map((obj) => ({
-    original_title: obj.original_title,
+    title: obj.title,
     original_name: obj.original_name,
     poster_path: obj.poster_path,
     release_date: obj.release_date,
@@ -24,7 +25,7 @@ const MovieList = () => {
           <Movie
             key={movie.id}
             overview={movie.overview}
-            original_title={movie.original_title}
+            title={movie.title}
             original_name={movie.original_name}
             first_air_date={movie.first_air_date}
             poster_path={movie.poster_path}

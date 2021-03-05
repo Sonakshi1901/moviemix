@@ -1,15 +1,14 @@
 import React from "react";
 import "./DetailsPopUp.css";
 
-function DetailsPopUp({ overview, showDetailsPopUp }) {
+const DetailsPopUp = (props) => {
   return(
-    <>
-      {showDetailsPopUp ?
+    <div className="popup__box">
          <div className="movie__details">
-           <p className="movie__overview"><b>Overview:</b> {overview}</p>
+          <span className="close-icon" onClick={props.handleClose}>x</span>
+           <p className="movie__overview"><b>Overview:</b> {props.overview}</p>
          </div>
-        : null}
-    </>
+    </div>
   )
 }
 
