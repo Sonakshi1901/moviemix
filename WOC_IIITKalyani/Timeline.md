@@ -36,7 +36,12 @@
 3. Hosting using firebase.
 4. Final team meeting and discussion for future of the project.
 
+
+
 ### Contributor
+
+1. [Mohit Raj]( https://github.com/mohit355) (WOC-MENTOR)[IIIT KALYANI]
+2. [Sonakshi Satpathy]( https://github.com/Sonakshi1901 )
 
 
 
