@@ -1,5 +1,5 @@
 # Moviemix
-
+## [Live Demo](https://moviemix-s1789.web.app/)
 ## What is Moviemix?
 Moviemix is a website that displays movies of all
 genres by using Alan AI voice command to make your tasks easier. This
