@@ -6,10 +6,11 @@ genres by using Alan AI voice command to make your tasks easier. This
 website is written in React.js using Context API and deployed with the help of Firebase.
 
 ## How to run Moviemix locally?
-1. Fork and clone this repository in your local machine.
-2. Execute 'npm install' command in your command prompt to install all the dependencies.
-3. run 'npm start' to run the project locally.
+1. **Fork** and **clone** the repository in your local machine.
+2. Execute **npm install** command in your command prompt to install all the dependencies.
+3. run **npm start** to run the project locally.
 4. You are good to go!
+
 
 
 ## Contributors:
